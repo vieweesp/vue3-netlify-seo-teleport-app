@@ -67,7 +67,17 @@
 </template>
 
 <script>
+import { setPageTitle, setMetaData } from '@/seo'
 export default {
   name: "Home",
+  setup(){
+    setPageTitle("Inicio - CursoVue")
+    setMetaData([
+      {
+        name: "description",
+        content: "Bienvenido a esta plataforma"
+      }
+    ])
+  }
 }
 </script>

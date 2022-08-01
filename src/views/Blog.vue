@@ -50,7 +50,21 @@
 </template>
 
 <script>
+import { setPageTitle, setMetaData } from '@/seo'
 export default {
   name: "Blog",
+  setup(){
+    setPageTitle("Blog - CursoVue")
+    setMetaData([
+      {
+        name: "description",
+        content: "Bienvenido a esta página de blog"
+      },
+      {
+        name: "keywords",
+        content: "vue3,seo"
+      }
+    ])
+  }
 }
 </script>

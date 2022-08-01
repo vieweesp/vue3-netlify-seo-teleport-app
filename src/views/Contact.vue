@@ -23,7 +23,18 @@
 </template>
 
 <script>
+import { setPageTitle, setMetaData } from '@/seo'
+
 export default {
   name: "Contact",
+  setup(){
+    setPageTitle("Contacto - CursoVue")
+    setMetaData([
+      {
+        name: "description",
+        content: "Bienvenido a esta página de contacto"
+      }
+    ])
+  }
 }
 </script>

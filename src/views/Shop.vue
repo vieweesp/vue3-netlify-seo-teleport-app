@@ -88,7 +88,18 @@
 </template>
 
 <script>
+import { setPageTitle, setMetaData } from '@/seo'
+
 export default {
   name: "Shop",
+  setup(){
+    setPageTitle("Shop - CursoVue")
+    setMetaData([
+      {
+        name: "description",
+        content: "Bienvenido a esta shop"
+      }
+    ])
+  }
 }
 </script>

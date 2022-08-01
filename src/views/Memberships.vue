@@ -193,7 +193,18 @@
 </template>
 
 <script>
+import { setPageTitle, setMetaData } from '@/seo'
+
 export default {
   name: "Memberships",
+  setup(){
+    setPageTitle("Membership - CursoVue")
+    setMetaData([
+      {
+        name: "description",
+        content: "Bienvenido a esta membership"
+      }
+    ])
+  }
 }
 </script>
